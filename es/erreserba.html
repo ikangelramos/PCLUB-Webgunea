@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitud de reserva – PCLUB Errenteria</title>
+  <meta name="description" content="Solicita tu ordenador o sala privada online. Te lo confirmamos por teléfono o email. PCLUB Errenteria.">
+  <meta name="theme-color" content="#0d0a14">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PCLUB Errenteria">
+  <meta property="og:title" content="Solicitud de reserva – PCLUB Errenteria">
+  <meta property="og:description" content="Solicita tu ordenador o sala privada online. Te lo confirmamos por teléfono o email. PCLUB Errenteria.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="../assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="eu" href="../erreserba.html"><link rel="alternate" hreflang="es" href="../es/erreserba.html"><link rel="alternate" hreflang="en" href="../en/erreserba.html"><link rel="alternate" hreflang="fr" href="../fr/erreserba.html"><link rel="alternate" hreflang="de" href="../de/erreserba.html"><link rel="alternate" hreflang="x-default" href="../erreserba.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../kontaktua.css">
+</head>
+<body class="page-erreserba">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="PCLUB – inicio">PC<span>LUB</span></a>
+      <div class="lang-switcher" role="group" aria-label="Hizkuntza / Idioma / Language / Langue / Sprache"><a href="../erreserba.html" hreflang="eu" lang="eu" title="Euskara">EU</a><a href="../es/erreserba.html" class="active" aria-current="true" hreflang="es" lang="es" title="Español">ES</a><a href="../en/erreserba.html" hreflang="en" lang="en" title="English">EN</a><a href="../fr/erreserba.html" hreflang="fr" lang="fr" title="Français">FR</a><a href="../de/erreserba.html" hreflang="de" lang="de" title="Deutsch">DE</a></div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul><li><a href="index.html">Inicio</a></li><li><a href="ordenagailuak.html">Ordenadores</a></li><li><a href="espazioak.html">Espacios</a></li><li><a href="zerbitzuak.html">Servicios</a></li><li><a href="taberna.html">Bar</a></li><li><a href="eskaintzak.html">Ofertas</a></li><li><a href="txapelketak.html">Torneos</a></li><li><a href="kontaktua.html">Contacto</a></li><li><a href="erreserba.html" class="btn btn--primary">Reservar</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Solicitud de reserva</h1>
+        <p>Elige lo que necesitas y envía la solicitud. Nosotros te la confirmamos.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form class="contact-form" id="rf" data-pclub-form="book" data-subject="PCLUB – Solicitud de reserva" data-ok="¡Solicitud recibida! La confirmaremos por teléfono o email. Hasta entonces no es una reserva firme." data-err="No se ha podido enviar. Inténtalo de nuevo o llama al 643 876 543." data-sending="Enviando…" data-fallback="Hemos abierto tu aplicación de correo para enviar el mensaje." data-invalid="Por favor, rellena todos los campos obligatorios." data-closed="Los lunes estamos cerrados. Elige otro día." data-lpc="Ordenadores" data-lroom="Suplemento de sala privada" data-early="Ese día abrimos a partir de las 08:00." novalidate>
+          <h2>Tu solicitud</h2>
+          <p class="form-note">Esto es una solicitud, no una reserva inmediata. Comprobaremos la disponibilidad y te la confirmaremos.</p>
+          <div class="form-row">
+            <div class="field"><label for="espazioa">Espacio</label><select id="espazioa" name="espazioa"><option data-extra="0">Zona abierta (compartida)</option><option data-extra="1.5">Sala privada (+1,50 €/hora)</option></select></div>
+            <div class="field"><label for="ordenagailua">Ordenador</label><select id="ordenagailua" name="ordenagailua"><option data-price="2.5">Ofimática (Windows 11 / Ubuntu)</option><option data-price="3.5">Gaming Entrada</option><option data-price="4.5">Gaming Pro</option><option data-price="5.5">Gaming Elite</option><option data-price="6">Alto rendimiento</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="data">Fecha</label><input type="date" id="data" name="data" required></div>
+            <div class="field"><label for="ordua">Hora de inicio</label><input type="time" id="ordua" name="ordua" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="orduak">Número de horas</label><input type="number" id="orduak" name="orduak" min="1" max="12" value="2" required></div>
+            <div class="field"><label for="pertsonak">Número de personas (un ordenador por persona)</label><input type="number" id="pertsonak" name="pertsonak" min="1" max="10" value="1" required></div>
+          </div>
+          <div class="estimate">
+            <p class="est-title">Precio estimado</p>
+            <ul class="est-lines" id="estimate-lines"></ul>
+            <p class="est-total"><span>Total</span> <strong id="estimate-out">—</strong></p>
+            <small>Cada persona usa un ordenador. Packs y tarifas nocturnas: pregúntanos.</small>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="izena">Nombre</label><input type="text" id="izena" name="izena" autocomplete="name" required></div>
+            <div class="field"><label for="telefonoa">Teléfono</label><input type="tel" id="telefonoa" name="telefonoa" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="emaila">Correo electrónico (opcional)</label><input type="email" id="emaila" name="emaila" autocomplete="email"></div>
+          <div class="field"><label for="oharrak">Observaciones (opcional)</label><textarea id="oharrak" name="oharrak" rows="3"></textarea></div>
+          <label class="check"><input type="checkbox" name="pribatutasuna" required><span>He leído y acepto la política de privacidad. (<a href="pribatutasuna.html">→</a>)</span></label>
+          <input type="text" name="web_site" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><p class="form-status" role="status" aria-live="polite"></p><button type="submit" class="btn btn--primary">Enviar solicitud</button>
+        </form>
+        <aside class="contact-info">
+          <div class="contact-item"><h3>¿Lo necesitas ya?</h3><p>Llámanos y te decimos al momento qué hay libre.</p><p><a href="tel:+34643876543">643 876 543</a></p></div>
+          <div class="contact-item"><h3>Horario</h3><p><strong>Lunes:</strong> cerrado<br><strong>De martes a jueves:</strong> 08:00 – 24:00<br><strong>De viernes a sábado:</strong> 24 horas<br><strong>Domingo:</strong> 08:00 – 02:00</p></div>
+          <div class="contact-item"><h3>Nuestro compromiso</h3><ul class="check-list"><li>No pagas nada online</li><li>Una persona confirmará tu solicitud</li><li>Cancelación gratuita avisando con 2 horas</li><li>Tus datos solo se usan para gestionar la reserva</li></ul></div>
+          <div class="contact-item"><h3>¿Tienes una oferta?</h3><p>Indícalo en observaciones: <a href="eskaintzak.html">ver ofertas</a>.</p></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="logo">PC<span>LUB</span></a>
+        <ul class="footer-links">
+          <li><a href="cookieak.html">Política de cookies</a></li>
+          <li><a href="pribatutasuna.html">Política de privacidad</a></li>
+          <li><a href="legala.html">Aviso legal</a></li>
+        </ul>
+        <div class="social"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.500-3.500a1.200 1.200 0 1 1 0 2.400 1.200 1.200 0 0 1 0-2.400z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h-3v12.500a2.500 2.500 0 1 1-2.500-2.500c.3 0 .7.1 1 .2V10a5.500 5.500 0 1 0 4.500 5.400V9.200a7 7 0 0 0 4 1.300V7.500A4 4 0 0 1 16 3z"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.800 3h3L14.300 10.500 22 21h-6l-4.700-6.200L6 21H3l7-8L2.500 3h6.200l4.300 5.700zm-1 16.200h1.700L7.300 4.700H5.500z"/></svg></a></div>
+      </div>
+      <ul class="footer-links footer-more"><li><a href="gidak.html">Guías</a></li><li><a href="galeria.html">Galería</a></li><li><a href="fidelitatea.html">Fidelidad</a></li><li><a href="bonoak.html">Bonos regalo</a></li></ul>
+      <p class="copy">Alfonso XI Kalea 10 · 20100 Errenteria · <a href="tel:+34643876543">643 876 543</a> · <a href="mailto:info@pclub.eus">info@pclub.eus</a></p>
+      <p class="copy">© PCLUB 2026 · C.C. Niessen, Errenteria</p>
+    </div>
+  </footer>
+  <script src="../assets/config.js"></script>
+  <script src="../assets/forms.js" defer></script>
+</body>
+</html>

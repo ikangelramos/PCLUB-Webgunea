@@ -1,0 +1,28 @@
+/* taberna.css – estilos propios de taberna.html */
+.page-taberna .page-hero { --glow: rgba(255, 180, 58, 0.3); }
+
+.menu-board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; align-items: start; }
+.menu-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.menu-card h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--amber); }
+.menu-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+.menu-card li:last-child { border-bottom: 0; }
+.price { color: var(--muted); white-space: nowrap; }
+.menu-board { margin-bottom: 3rem; }
+.menu-card .card-desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+.menu-note { margin-top: 1.5rem; color: var(--muted); text-align: center; }
+
+
+@media (max-width: 960px) {
+  .menu-board { grid-template-columns: 1fr; }
+}

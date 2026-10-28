@@ -1,2 +1,0 @@
-# PCLUB-Webgunea
-Gure Webgunea

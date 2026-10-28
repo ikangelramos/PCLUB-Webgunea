@@ -1,0 +1,23 @@
+/* ordenagailuak.css – estilos propios de ordenagailuak.html */
+.page-ordenagailuak .page-hero { --glow: rgba(75, 227, 240, 0.28); }
+
+.page-ordenagailuak .split { scroll-margin-top: calc(var(--header-h) + 1rem); }
+
+.spec-tags { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.spec-tags li {
+  padding: 0.3rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.9rem;
+}
+
+/* Indicador de potencia: 5 segmentos */
+.meter { display: inline-flex; gap: 4px; }
+.meter i { width: 16px; height: 8px; border-radius: 3px; background: var(--line); }
+.meter[data-level="1"] i:nth-child(-n+1),
+.meter[data-level="2"] i:nth-child(-n+2),
+.meter[data-level="3"] i:nth-child(-n+3),
+.meter[data-level="4"] i:nth-child(-n+4),
+.meter[data-level="5"] i:nth-child(-n+5) { background: var(--amber); }
+.tier { margin-top: 1.25rem; font-size: 1.2rem; color: var(--amber); }

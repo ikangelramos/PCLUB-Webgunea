@@ -1,0 +1,20 @@
+/* espazioak.css – estilos propios de espazioak.html */
+.page-espazioak .page-hero { --glow: rgba(255, 180, 58, 0.25); }
+
+.rooms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+.room {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+.room .ph { border-radius: 0; aspect-ratio: 1 / 1; }
+.room-body { padding: 2rem; }
+.room-body h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+.room-body p { color: var(--muted); }
+.room-body .price-tag { margin-top: 1.25rem; font-weight: 600; color: var(--amber); }
+
+@media (max-width: 820px) {
+  .rooms { grid-template-columns: 1fr; }
+}
