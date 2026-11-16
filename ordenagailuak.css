@@ -21,3 +21,4 @@
 .meter[data-level="4"] i:nth-child(-n+4),
 .meter[data-level="5"] i:nth-child(-n+5) { background: var(--amber); }
 .tier { margin-top: 1.25rem; font-size: 1.2rem; color: var(--amber); }
+.split-text h3.tier, h3.tier { margin: 1.25rem 0 0; font-size: 1.2rem; }

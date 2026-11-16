@@ -1,7 +1,7 @@
 /* taberna.css – estilos propios de taberna.html */
 .page-taberna .page-hero { --glow: rgba(255, 180, 58, 0.3); }
 
-.menu-board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; align-items: start; }
+.menu-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; align-items: start; }
 .menu-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -24,5 +24,5 @@
 
 
 @media (max-width: 960px) {
-  .menu-board { grid-template-columns: 1fr; }
+  .menu-board { grid-template-columns: minmax(0, 1fr); }
 }

@@ -36,7 +36,7 @@
       list.forEach(function (r) {
         var card = document.createElement('figure'); card.className = 'review';
         var st = document.createElement('div'); st.className = 'review-stars';
-        st.setAttribute('aria-label', (r.stars || 5) + '/5');
+        st.setAttribute('aria-label', (r.stars || 5) + '/5'); st.setAttribute('role', 'img');
         st.textContent = '★★★★★'.slice(0, Math.max(1, Math.min(5, r.stars || 5)));
         var q = document.createElement('blockquote'); q.textContent = pick(r.text);
         var n = document.createElement('figcaption'); n.textContent = r.name + (r.role ? ' · ' + pick(r.role) : '');
