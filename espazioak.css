@@ -1,5 +1,5 @@
 /* espazioak.css – estilos propios de espazioak.html */
-.page-espazioak .page-hero { --glow: rgba(255, 180, 58, 0.25); }
+.page-espazioak .page-hero { --glow: rgba(250, 205, 6, 0.25); }
 
 .rooms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 .room {

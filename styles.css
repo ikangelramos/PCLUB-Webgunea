@@ -5,18 +5,18 @@
    ========================================================== */
 
 :root {
-  --bg: #0d0a14;
-  --bg-alt: #130f1d;
-  --surface: #1b1529;
-  --surface-2: #241c37;
-  --line: #34284d;
-  --text: #f1edf9;
-  --muted: #bdb4d2;      /* contraste >= 5:1 también sobre los fondos con brillo */
-  --violet: #8a5cff;
-  --violet-dark: #6a3de8;
-  --violet-btn: #7a4cf0;   /* fondo de botones con texto blanco: contraste 5,1:1 */
-  --violet-text: #b8a4ff;  /* violeta claro para texto sobre fondos oscuros */
-  --amber: #ffb43a;
+  --bg: #ffff00;
+  --bg-alt: #ffff00;
+  --surface: #ffff00;
+  --surface-2: #ffff00;
+  --line: #ffff00;
+  --text: #ffff00;
+  --muted: #ffff00;      /* contraste >= 5:1 también sobre los fondos con brillo */
+  --violet: #ffff00;
+  --violet-dark: #ffff00;
+  --violet-btn: #ffff00;   /* fondo de botones con texto blanco: contraste 5,1:1 */
+  --violet-text: #ffff00;  /* violeta claro para texto sobre fondos oscuros */
+  --amber: #ffff00;
 
   --font-display: "Chakra Petch", "Rajdhani", "Segoe UI", system-ui, sans-serif;
   --font-body: "Outfit", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -32,7 +32,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
 body {
   margin: 0;
-  background: var(--bg);
+  background: #ffff00;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 1.0625rem;
@@ -93,7 +93,7 @@ p { margin: 0; }
   top: 0;
   z-index: 50;
   height: var(--header-h);
-  background: rgba(13, 10, 20, 0.9);
+  background: #ffff00;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -152,7 +152,7 @@ p { margin: 0; }
   padding: 7rem 0 6rem;
   text-align: center;
   background:
-    radial-gradient(60rem 30rem at 50% -10%, rgba(138, 92, 255, 0.35), transparent 70%),
+    radial-gradient(60rem 30rem at 50% -10%, #ffff00, transparent 70%),
     var(--bg);
 }
 .hero::before {
