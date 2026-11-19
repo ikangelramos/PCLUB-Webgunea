@@ -1,5 +1,5 @@
 /* ordenagailuak.css – estilos propios de ordenagailuak.html */
-.page-ordenagailuak .page-hero { --glow: rgba(75, 227, 240, 0.28); }
+.page-ordenagailuak .page-hero { --glow: rgba(243, 219, 6, 0.28); }
 
 .page-ordenagailuak .split { scroll-margin-top: calc(var(--header-h) + 1rem); }
 
