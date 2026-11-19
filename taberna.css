@@ -1,5 +1,5 @@
 /* taberna.css – estilos propios de taberna.html */
-.page-taberna .page-hero { --glow: rgb(255, 219, 14); }
+.page-taberna .page-hero { --glow: rgba(255, 180, 58, 0.3); }
 
 .menu-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; align-items: start; }
 .menu-card {

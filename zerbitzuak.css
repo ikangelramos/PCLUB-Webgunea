@@ -1,5 +1,5 @@
 /* zerbitzuak.css – estilos propios de zerbitzuak.html */
-.page-zerbitzuak .page-hero { --glow: rgb(252, 206, 2); }
+.page-zerbitzuak .page-hero { --glow: rgba(255, 122, 209, 0.25); }
 
 .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
 .service {

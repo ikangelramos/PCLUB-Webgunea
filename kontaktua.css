@@ -1,5 +1,5 @@
 /* kontaktua.css – estilos propios de kontaktua.html */
-.page-kontaktua .page-hero { --glow: rgba(252, 228, 14, 0.4); }
+.page-kontaktua .page-hero { --glow: rgba(138, 92, 255, 0.4); }
 
 .contact-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: start; }
 
